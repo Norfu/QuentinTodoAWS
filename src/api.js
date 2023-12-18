@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 
-function api() {
+function apiGet() {
     const getTodo = () => {
       return fetch("https://gsym8ugyub.execute-api.eu-central-1.amazonaws.com/dev/todo_list",
        {
@@ -11,6 +11,8 @@ function api() {
     return {
       getTodo
     };
-  }
+    
+    }
   
-  export default api();
+  
+  export default apiGet();
